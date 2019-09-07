@@ -1,0 +1,13 @@
+Typescript
+
+End-to-End testing possible 
+Loosely Coupled
+
+Instead entire dom, it just receive json. Then update the ui.
+Now the backend is responsible for DB and business logic.  Frontend will decide the representation.
+
+TypeScript:
+
+install typescript
+tsc demo.ts//demo.js will be created
+node demo.js

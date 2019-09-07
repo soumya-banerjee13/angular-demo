@@ -1,0 +1,8 @@
+<!--<table>
+    <tr>{{student.firstName}}</tr>
+    <tr><div  *ngIf="student.score > 50" class="text-success">{{student.score}}</div></tr>
+    <tr><div  *ngIf="student.score < 50" class="text-success">{{student.score}}</div></tr>
+</table>-->
+<ul>
+    <li *ngFor="let student of studentList">{{student.firstName}}</li>
+</ul>

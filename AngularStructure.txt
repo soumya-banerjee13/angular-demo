@@ -1,0 +1,20 @@
+Root module : app.module.ts
+
+Root Module contains multiple module.
+A module can have multiple  modules(Holds true for root module).
+
+
+main.ts//Main file
+app.component.js
+app.component.css
+app.module.js
+
+Dirctives:
+Ng Directives
+Custom Directives
+
+Ex: *ngFor
+	* for DOM manipulation
+	
+	
+angular.io/guide/lifecycle-hooks

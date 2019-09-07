@@ -1,0 +1,6 @@
+Component:
+ng g c demo3
+pipe:
+ng g p <name>
+directive:
+ng g d <name>

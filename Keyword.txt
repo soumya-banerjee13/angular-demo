@@ -1,0 +1,9 @@
+1. var
+2. let
+3. hoisting
+4. Node modules
+5. Node components
+6. webpack
+7. 
+
+[(ngModel)] for two way binding
