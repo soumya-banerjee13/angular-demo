@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-nav',
@@ -8,12 +9,13 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
+  navs = ['Login', 'Home', 'Some Page'];
+  bgcolor = environment.navbarcolor;
 
   ngOnInit() {
   }
   gotoPage() {
-    this.router.navigate(["/showPipes",2]);
+    this.router.navigate(['/showPipes', 2]);
   }
-  navs = ["Login","Home","Some Page"];
 }

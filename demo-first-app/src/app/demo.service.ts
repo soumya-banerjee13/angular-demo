@@ -6,26 +6,26 @@ import {HttpClient} from '@angular/common/http';
 })
 export class DemoService {
 
-  studentList= [
+  studentList = [
     {
-    firstName: "Soumya" ,
-    lastName: "Banerjee",
+    firstName: 'Soumya' ,
+    lastName: 'Banerjee',
     score: 50
     },
     {
-      firstName: "Ashish",
-      lastName: "Sarkar",
+      firstName: 'Ashish',
+      lastName: 'Sarkar',
       score: 20
     }
   ];
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getJsonData() {
-    return this.http.get("https://jsonplaceholder.typicode.com/posts");
+    return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
-  
-  deleteJsonData(obj:any) {
-    return this.http.delete("https://jsonplaceholder.typicode.com/posts" + "/"+obj.id)
+
+  deleteJsonData(obj: any) {
+    return this.http.delete('https://jsonplaceholder.typicode.com/posts' + '/' + obj.id);
   }
 }

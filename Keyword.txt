@@ -7,3 +7,31 @@
 7. 
 
 [(ngModel)] for two way binding
+
+
+Forms:
+1. Template Forms
+2. Reactive Forms
+
+View Encapsulation:
+Emulated 
+Native
+None 
+
+Change Detection
+
+Eager Loading
+Lazy Loading
+
+Router.forRoot();
+Router.forChild(); //For lazy loading
+
+JIT Compiler
+AOT Compiler
+
+ng lint
+
+
+npm i -g angular-cli-ghpages
+ng build --prod --base-href="https://soumya-banerjee13.github.io/angular-first-demo"
+angular-cli-ghpages --no-silent

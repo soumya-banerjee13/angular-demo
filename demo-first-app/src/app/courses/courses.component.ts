@@ -7,14 +7,18 @@ import { DemoService } from '../demo.service';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-  studentList:any;
 
-  constructor(private service:DemoService) { 
-    
+  constructor(private service: DemoService) {
+
   }
+  studentList: any;
+  imgUrl = 'http://lorempixel.com/400/200/nature';
+  isActive = true;
+  courses = ['Java', 'Python', 'C++'];
+  email2 = '';
 
   ngOnInit() {
-    
+
     console.log(this.service.getJsonData());
     this.getDataFromService();
   }
@@ -22,26 +26,22 @@ export class CoursesComponent implements OnInit {
     this.service.getJsonData().subscribe(response => {
       this.studentList = response;
       console.log(this.studentList);
-    })
+    });
   }
-  imgUrl = "http://lorempixel.com/400/200/nature";
-  isActive = true;
-  courses = ["Java","Python","C++"];
-  email2="";
   onSave($event) {
-    $event.stopPropagation();//Event of parent element will not be executed
-    console.log("Button was clicked",$event);
+    $event.stopPropagation(); // Event of parent element will not be executed
+    console.log('Button was clicked', $event);
   }
   onDivClick($event) {
-    console.log("Div was clicked",$event);
+    console.log('Div was clicked', $event);
   }
   onInputClicked(email) {
-    console.log("Email: "+email);
+    console.log('Email: ' + email);
   }
   onInput2Clicked() {
-    
+
   }
-  changeFunction($event){
-    console.log("Event Emitted",$event.firstName);
+  changeFunction($event) {
+    console.log('Event Emitted', $event.firstName);
   }
 }

@@ -18,3 +18,21 @@ Ex: *ngFor
 	
 	
 angular.io/guide/lifecycle-hooks
+
+############# Pre-requisites  #############
+npm i -g angular-cli-ghpages
+git remote add origin https://github.com/pawanmundhra/angular-app-demo.git
+Note: Please note that there is no requirement of committing 'dist' folder to GIT.
+git push -u origin master
+ng add angular-cli-ghpages
+
+############# Follow below steps when you want to deploy #############
+ng deploy --base-href="soumya-banerjee13.github.io/angular-first-demo"
+cd your-angular-project-name
+ngh --dir dist/<your-angular-project-name>
+Note : ngh is short hand for angular-cli-ghpages
+
+Your Application will be hosted at the URL which you have speicified as --base-href while doing ng deploy
+i.e.
+https://soumya-banerjee13.github.io/angular-first-demo/
+Please ignore my userid and my repository name

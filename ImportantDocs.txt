@@ -11,3 +11,15 @@ TypeScript:
 install typescript
 tsc demo.ts//demo.js will be created
 node demo.js
+
+ng-bootstrap
+
+Angular Deployment:
+Deployment
+Optimization
+Build Deployable Packages
+
+ng build --prod
+Minification
+Uglification
+Bundling
