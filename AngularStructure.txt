@@ -29,7 +29,7 @@ ng add angular-cli-ghpages
 ############# Follow below steps when you want to deploy #############
 ng deploy --base-href="soumya-banerjee13.github.io/angular-first-demo"
 cd your-angular-project-name
-ngh --dir dist/<your-angular-project-name>
+ngh --dir dist/demo-first-app
 Note : ngh is short hand for angular-cli-ghpages
 
 Your Application will be hosted at the URL which you have speicified as --base-href while doing ng deploy
