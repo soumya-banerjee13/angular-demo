@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { NavComponent } from './nav/nav.component';
+import { UserComponent } from './user/user.component';
+import { DataComponent } from './data/data.component';
+import { ReversePipe } from './user/reverse.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentComponent,
     TeacherComponent,
-    NavComponent
+    NavComponent,
+    UserComponent,
+    DataComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
